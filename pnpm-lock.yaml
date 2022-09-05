@@ -1,8 +1,13 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/silkscreen': ^4.5.0
   '@sveltejs/adapter-auto': next
+  '@sveltejs/adapter-node': 1.0.0-next.86
   '@sveltejs/kit': next
+  '@types/matter-js': ^0.18.1
+  image-size: ^1.0.2
+  matter-js: ^0.18.0
   prettier: ^2.6.2
   prettier-plugin-svelte: ^2.7.0
   svelte: ^3.44.0
@@ -12,9 +17,16 @@ specifiers:
   typescript: ^4.7.4
   vite: ^3.0.4
 
+dependencies:
+  '@fontsource/silkscreen': 4.5.0
+  '@sveltejs/adapter-node': 1.0.0-next.86
+  image-size: 1.0.2
+  matter-js: 0.18.0
+
 devDependencies:
   '@sveltejs/adapter-auto': 1.0.0-next.65
   '@sveltejs/kit': 1.0.0-next.428_svelte@3.49.0+vite@3.0.9
+  '@types/matter-js': 0.18.1
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0_o3ioganyptcsrh6x4hnxvjkpqi
   svelte: 3.49.0
@@ -38,6 +50,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource/silkscreen/4.5.0:
+    resolution: {integrity: sha512-YXCb8sVgpzOSqLiYfdatDxiSi8+s5rdZ2nA3LFFPNC/ZvAckRXPUMmAbZ1MZi5O3De8EliMPvsZv7mkgMkcCyg==}
+    dev: false
 
   /@iarna/toml/2.2.5:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
@@ -138,6 +154,10 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
+  /@sveltejs/adapter-node/1.0.0-next.86:
+    resolution: {integrity: sha512-VfKcFukVEPoAdm8tVGkFLyDDMZe+9HLFW7X/9Ch/UrSCHo3/HyOfYt/slmh+sjGXYjIBAtTjacrIfcMdYh744g==}
+    dev: false
+
   /@sveltejs/adapter-vercel/1.0.0-next.67:
     resolution: {integrity: sha512-xg85d/vlivbTaZu70zmaPNkrY1YZhDrcxljuwVWO0LCzA4DACIA7CnXI9klUiXM5SPpsB8BhY6dS8sW5cDYWzw==}
     dependencies:
@@ -197,6 +217,10 @@ packages:
       vite: 3.0.9
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@types/matter-js/0.18.1:
+    resolution: {integrity: sha512-Qck+zYiE9GI7vMpeEzMC4JGk+/erTF0XVwOrpwvIGaBn9NPMXNhd/W5EaPkz+CpT+uO9A4C1bHbU+A4j/QzG6A==}
     dev: true
 
   /@types/node/18.7.8:
@@ -754,6 +778,14 @@ packages:
       - supports-color
     dev: true
 
+  /image-size/1.0.2:
+    resolution: {integrity: sha512-xfOoWjceHntRb3qFCrh5ZFORYH8XCdYpASltMhZ/Q0KZiOwjdE/Yl2QCiWdwD+lygV5bMCvauzgu5PxBX/Yerg==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      queue: 6.0.2
+    dev: false
+
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
@@ -771,7 +803,6 @@ packages:
 
   /inherits/2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
-    dev: true
 
   /is-binary-path/2.1.0:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
@@ -839,6 +870,10 @@ packages:
     dependencies:
       semver: 6.3.0
     dev: true
+
+  /matter-js/0.18.0:
+    resolution: {integrity: sha512-/ZVem4WygUnbmo/iE4oHZpZS97btfBtYy5Iwn1396vUZU7YhgVEN8J4UWwfZwY1ZqoTYlPgjvSw9WXauuXL0mg==}
+    dev: false
 
   /merge2/1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
@@ -1039,6 +1074,12 @@ packages:
   /queue-microtask/1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
+
+  /queue/6.0.2:
+    resolution: {integrity: sha512-iHZWu+q3IdFZFX36ro/lKBkSvfkztY5Y7HMiPlOUjhupPcG2JMfst2KKEpu5XndviX/3UhFbRngUPNKtgvtZiA==}
+    dependencies:
+      inherits: 2.0.4
+    dev: false
 
   /readable-stream/3.6.0:
     resolution: {integrity: sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==}
